@@ -43,7 +43,7 @@ It features a responsive UI for a restaurant named _"The Happy Place"_, complete
 1.  **Clone the repository**
 
     ```bash
-    git clone [https://github.com/taophycc/restaurant-web-server.git](https://github.com/taophycc/restaurant-web-server.git)
+    git clone https://github.com/taophycc/Restaurant-web-server.git
     cd restaurant-web-server
     ```
 
