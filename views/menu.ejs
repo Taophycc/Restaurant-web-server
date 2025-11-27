@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Menu</h1>
+
+      <ol class="menu-list">
+        <% for (let item of menuItems){ %>
+        <li class="menu-item">
+          <div class="item-details">
+            <strong><%= item.name %></strong>
+            <span class="description"><%= item.description %></span>
+          </div>
+          <span class="price"><%= item.cost %></span>
+        </li>
+        <% }%>
+      </ol>
+
+      <a href="/" class="btn" style="margin-top: 20px">Back to Home</a>
+    </div>
+  </body>
+</html>

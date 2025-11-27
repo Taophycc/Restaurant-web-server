@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Home</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-box">
+        <h1 style="padding: 30px;">Welcome to <%= name %></h1>
+      </div>
+    </header>
+
+    <section class="container" style="text-align: center; padding-top: 50px">
+      <h2>What would you like to see?</h2>
+      <p style="margin-bottom: 30px; color: #666">
+        Fresh food, locally sourced.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px">
+        <a href="/menu" class="btn">View Our Menu</a>
+        <a href="/hours" class="btn">Check Opening Hours</a>
+        <a href="/about" class="btn">About Us</a>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Hours</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Opening Hours</h1>
+
+      <div class="hours-grid">
+        <% for(let day of days) { %> <% const hoursObj = openingHours[day] ||
+        openingHours['defaultHours'] %>
+        <div class="hour-card <%= day === today ? 'current-day' : '' %>">
+          <h2><%= day.toUpperCase() %></h2>
+          <div class="time-box">
+            <% if (hoursObj.open) {%>
+            <p><span class="label">Open:</span> <%= hoursObj.open %></p>
+            <p><span class="label">Close:</span> <%= hoursObj.closed %></p>
+            <% } else {%>
+            <p class="status-closed">CLOSED</p>
+            <% } %>
+          </div>
+        </div>
+        <% }%>
+      </div>
+
+      <a href="/" class="btn" style="margin-top: 30px">Back to Home</a>
+    </div>
+  </body>
+</html>
